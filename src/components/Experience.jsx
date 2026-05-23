@@ -5,7 +5,7 @@ export default function Experience({ t }) {
     <Section id="experience" heading={t.experience.heading}>
       <div style={styles.timeline}>
         {t.experience.jobs.map((job, i) => (
-          <div key={i} style={styles.job}>
+          <div key={i} style={styles.job} className="job-entry">
             <div style={styles.dot} />
             <div style={styles.content}>
               <div style={styles.header}>

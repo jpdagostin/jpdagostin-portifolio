@@ -33,7 +33,7 @@ export default function Skills({ t }) {
     <Section id="skills" heading={t.skills.heading}>
       <div style={styles.grid}>
         {t.skills.categories.map(cat => (
-          <div key={cat.title} style={styles.card}>
+          <div key={cat.title} style={styles.card} className="skills-card">
             <h3 style={styles.catTitle}>{cat.title}</h3>
             <div className="skill-tags" style={styles.tags}>
               {cat.items.map(item => (

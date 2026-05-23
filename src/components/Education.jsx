@@ -15,7 +15,7 @@ export default function Education({ t }) {
     <Section id="education" heading={t.education.heading}>
       <div style={styles.list}>
         {t.education.list.map((e, i) => (
-          <div key={i} style={styles.item}>
+          <div key={i} style={styles.item} className="edu-item">
             <div style={styles.left}>
               <span style={styles.iconWrap}>{eduIcon(e.degree)}</span>
               <div>
