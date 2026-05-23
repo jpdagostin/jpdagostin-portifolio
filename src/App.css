@@ -1,0 +1,14 @@
+/* App-level overrides (kept minimal — most styles live inline or in index.css) */
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: #58A6FF !important;
+}
+
+.navbar a:hover {
+  color: #58A6FF !important;
+}
+
+.btn-download:hover {
+  background: #1158c7 !important;
+}
+
