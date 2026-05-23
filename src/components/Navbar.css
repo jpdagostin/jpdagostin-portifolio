@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: #010409;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  height: 56px;
+  border-bottom: 1px solid #30363D;
+}
+
+/* Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #E6EDF3;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #58A6FF;
+}
+
+/* Language selector */
+.lang-selector {
+  display: flex;
+  gap: 6px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+.lang-btn--active {
+  opacity: 1;
+}
+
+/* Hamburger — hidden on desktop */
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #E6EDF3;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+/* X animation */
+.navbar-hamburger .hamburger-line.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar-hamburger .hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+.navbar-hamburger .hamburger-line.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+    order: 1;
+    padding: 16px 0;
+  }
+
+  .lang-selector {
+    order: 2;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  .navbar-links {
+    order: 3;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-top: 1px solid transparent;
+  }
+
+  .navbar-links.navbar-links--open {
+    max-height: 300px;
+    border-top-color: #21262D;
+    padding-bottom: 8px;
+  }
+
+  .navbar-links a {
+    padding: 10px 4px;
+    font-size: 0.9rem;
+  }
+}
