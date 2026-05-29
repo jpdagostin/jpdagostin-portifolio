@@ -10,13 +10,15 @@ export const translations = {
     about: {
       heading: 'About Me',
       paragraphs: [
-        "I'm João D'Agostin, a Back-End Developer working on Artificial Intelligence projects, combining solid software engineering with product vision and data sensibility.",
-        "I hold a degree in Software Engineering, a postgraduate degree in Data Science, and a technical background in IT. I started my career in data and transitioned into back-end development — which gives me a unique perspective when building systems that consume, process, and expose data efficiently.",
+        "I'm João D'Agostin, a Back-End Developer with experience in Applied AI and Data Engineering. I focus on building systems that process data and turn it into something useful, whether that's an API, a pipeline, or an intelligent feature.",
+        "I have a degree in Software Engineering, a postgraduate degree in Data Science, and a technical background in IT. I started my career in data analysis and moved into back-end development, which gives me a practical view of how data flows through a system from end to end.",
+        "A big part of my work has been AI applied to vehicle telematics. I've worked on projects that process telemetry data from fleet vehicles to analyze driver behavior, identifying patterns that point to safe or risky driving. It's a combination of data engineering, analysis, and applied AI that has a direct impact on fleet safety and operations.",
         { bullets: [
           'Development of scalable APIs and back-end systems',
-          'Process automation and system integrations',
-          'Applied AI projects for products and business flows',
+          'Applied AI projects for driver behavior analysis using vehicle telemetry data',
           'Building and maintaining data pipelines (ETLs) supporting intelligent systems',
+          'CI/CD practices and automated workflows for software delivery',
+          'Process automation and system integrations',
           'Data modeling and governance',
           'Development and customization of modules on the Odoo.sh platform',
         ]},
@@ -113,13 +115,15 @@ export const translations = {
     about: {
       heading: 'Sobre Mim',
       paragraphs: [
-        "Sou João D'Agostin, Desenvolvedor Back-End com atuação em projetos de Inteligência Artificial, combinando engenharia de software sólida com visão de produto e sensibilidade para dados.",
-        "Tenho graduação em Engenharia de Software, pós-graduação em Data Science e formação técnica em TI. Comecei minha carreira na área de dados e migrei para o desenvolvimento back-end — o que me dá uma perspectiva diferenciada na hora de construir sistemas que consomem, processam e expõem dados de forma eficiente.",
+        "Sou João D'Agostin, Desenvolvedor Back-End com experiência em IA Aplicada e Engenharia de Dados. Trabalho construindo sistemas que processam dados e transformam isso em algo útil, seja uma API, um pipeline ou uma funcionalidade inteligente.",
+        "Tenho graduação em Engenharia de Software, pós-graduação em Data Science e formação técnica em TI. Comecei na área de dados e fui migrando para o desenvolvimento back-end, o que me dá uma visão prática de como os dados fluem por um sistema do começo ao fim.",
+        "Boa parte do meu trabalho tem sido com IA aplicada à telemetria veicular. Trabalhei em projetos que processam dados de telemetria de frotas para analisar o comportamento dos motoristas, identificando padrões que indicam uma condução segura ou arriscada. É uma combinação de engenharia de dados, análise e IA aplicada com impacto direto na segurança e operação das frotas.",
         { bullets: [
           'Desenvolvimento de APIs e sistemas back-end escaláveis',
-          'Automação de processos e integrações entre sistemas',
-          'Projetos de IA aplicada a produtos e fluxos de negócio',
+          'Projetos de IA aplicada à análise de comportamento de condutores via telemetria veicular',
           'Construção e manutenção de pipelines de dados (ETLs) como suporte a sistemas inteligentes',
+          'Práticas de CI/CD e fluxos automatizados de entrega de software',
+          'Automação de processos e integrações entre sistemas',
           'Modelagem e governança de dados',
           'Desenvolvimento e customização de módulos na plataforma Odoo.sh',
         ]},

@@ -3,21 +3,21 @@ import Section from './Section'
 export default function Experience({ t }) {
   return (
     <Section id="experience" heading={t.experience.heading}>
-      <div style={styles.timeline}>
+      <div style={styles.timeline} className="experience-timeline">
         {t.experience.jobs.map((job, i) => (
           <div key={i} style={styles.job} className="job-entry">
-            <div style={styles.dot} />
-            <div style={styles.content}>
+            <div style={styles.dot} className="job-dot" />
+            <div style={styles.content} className="job-content">
               <div style={styles.header}>
                 <div>
-                  <h3 style={styles.role}>{job.role}</h3>
-                  <span style={styles.company}>{job.company}</span>
+                  <h3 style={styles.role} className="job-role">{job.role}</h3>
+                  <span style={styles.company} className="job-company">{job.company}</span>
                 </div>
-                <span style={styles.period}>{job.period}</span>
+                <span style={styles.period} className="period-badge">{job.period}</span>
               </div>
-              <ul style={styles.bullets}>
+              <ul style={styles.bullets} className="job-bullets">
                 {job.bullets.map((b, j) => (
-                  <li key={j} style={styles.bullet}>{b}</li>
+                  <li key={j} style={styles.bullet} className="job-bullet">{b}</li>
                 ))}
               </ul>
             </div>

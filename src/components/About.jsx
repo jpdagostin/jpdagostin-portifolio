@@ -7,14 +7,14 @@ export default function About({ t }) {
         item.bullets ? (
           <ul key={i} style={styles.list}>
             {item.bullets.map((b, j) => (
-              <li key={j} style={styles.item}>
-                <span style={styles.dot}>▸</span>
+              <li key={j} style={styles.item} className="about-item">
+                <span style={styles.dot} className="about-dot">▸</span>
                 {b}
               </li>
             ))}
           </ul>
         ) : (
-          <p key={i} style={styles.p}>{item}</p>
+          <p key={i} style={styles.p} className="about-p">{item}</p>
         )
       )}
     </Section>

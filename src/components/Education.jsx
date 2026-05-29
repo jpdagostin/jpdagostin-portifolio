@@ -17,13 +17,13 @@ export default function Education({ t }) {
         {t.education.list.map((e, i) => (
           <div key={i} style={styles.item} className="edu-item">
             <div style={styles.left}>
-              <span style={styles.iconWrap}>{eduIcon(e.degree)}</span>
+              <span style={styles.iconWrap} className="edu-icon-wrap">{eduIcon(e.degree)}</span>
               <div>
-                <h3 style={styles.degree}>{e.degree}</h3>
-                <span style={styles.institution}>{e.institution}</span>
+                <h3 style={styles.degree} className="edu-degree">{e.degree}</h3>
+                <span style={styles.institution} className="edu-institution">{e.institution}</span>
               </div>
             </div>
-            {e.period && <span style={styles.period}>{e.period}</span>}
+            {e.period && <span style={styles.period} className="period-badge">{e.period}</span>}
           </div>
         ))}
       </div>

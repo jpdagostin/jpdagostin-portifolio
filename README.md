@@ -76,7 +76,34 @@ Este repositório é o código-fonte do meu portfólio pessoal, desenvolvido com
 
 - Tema **GitHub Dark** — clean e técnico
 - **Multilíngue** — Português e Inglês
-- **Exportável como PDF** — layout otimizado para currículo
+- **Exportável como PDF** — layout otimizado para currículo com fontes escuras e sem quebras de página
 - Deploy automático via **GitHub Pages**
 
 🔗 **[Acessar portfólio](https://jpdagostin.github.io/data-engineering-portifolio/)**
+
+---
+
+## Rodando localmente
+
+**Pré-requisitos:** Node.js 18+
+
+```bash
+# Instalar dependências
+npm install
+
+# Iniciar servidor de desenvolvimento
+npm run dev
+```
+
+Acesse `http://localhost:5173` no navegador.
+
+**Gerar o PDF do currículo:**
+1. Abra o portfólio no navegador
+2. Clique no botão **Download CV**
+3. Na janela de impressão, selecione **Salvar como PDF**
+
+**Fazer deploy para o GitHub Pages:**
+
+```bash
+npm run deploy
+```

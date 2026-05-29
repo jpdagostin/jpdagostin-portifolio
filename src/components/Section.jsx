@@ -2,7 +2,7 @@ export default function Section({ id, heading, children }) {
   return (
     <section id={id} style={styles.section}>
       <div style={styles.inner}>
-        <h2 style={styles.heading}>{heading}</h2>
+        <h2 style={styles.heading} className="section-heading">{heading}</h2>
         {children}
       </div>
     </section>
